@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encouragement</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2E8B57;
+            color: white;
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const messages = [
+                "You're doing great!",
+                "Keep going, you're awesome!",
+                "Believe in yourself!",
+                "You've got this!",
+                "You are enough.",
+                "The world needs you.",
+                "Stay strong, stay positive!",
+                "You are loved.",
+                "Every day is a new beginning!",
+                "You matter!",
+                "Success is the sum of small efforts repeated daily.",
+                "You have the power to create change.",
+                "Difficulties in life are just opportunities to grow.",
+                "Your potential is limitless.",
+                "One step at a time, you’re getting there.",
+                "Your kindness makes the world a better place.",
+                "Dream big, work hard, stay humble.",
+                "Even the darkest night will end and the sun will rise.",
+                "You are stronger than you think.",
+                "Progress, not perfection. Keep moving forward!"
+            ];
+            
+            const message = messages[Math.floor(Math.random() * messages.length)];
+            document.body.innerHTML = `<div>${message}</div>`;
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
